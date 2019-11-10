@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GadTo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body class="gt-hyper-link">
+    <!--Top bar-->
+    <div class="container-fluid">
+        <div class="row p-3 gt-top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-3"><img src="images/sent-mail.svg" alt=""
+                            style="max-width: 33px; max-height: 33px;">
+                        Sign
+                        up for Newsletter</div>
+                    <div class="col-sm-5">
+                        <!-- Newsletter -->
+                        <form>
+                            <div class="input-group input-group-lg">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-primary">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-2"><a href="javascript:void(0);">UNSUBSCRIBE</a></div>
+                    <div class="col-sm-2">
+                        <a href="sign-up.html">Register</a>&emsp;|&emsp;<a href="log-in.html">Sign
+                            in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--2nd bar-->
+    <div class="container-fluid">
+        <div class="row p-5 gt-2nd-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-3 gt-logo"><a href="index.html">GadTo</a></div>
+                    <div class="col-sm-6">
+                        <!--Search-->
+                        <form>
+                            <div class="input-group input-group-lg">
+                                <input type="search" class="form-control gt-global-search"
+                                    placeholder="Search in GadTo.." required autofocus>
+                                <div class="input-group-append">
+                                    <a class="nav-link dropdown-toggle gt-cat" data-toggle="dropdown"
+                                        href="javascript:void(0);">All
+                                        Categories</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="javascript:void(0);">Computers</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">Laptops</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">Cameras</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">Smartphones</a>
+                                    </div>
+                                </div>
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-3">
+                        <!--Stats-->
+                        <small class="text-muted">
+                            <span><i class="fa fa-cubes"></i>1.5<sup>million</sup><sup>+</sup> Gadgets</span><br>
+                            <span><i class="fa fa-heart"></i>100K<sup>+</sup> Wishlist</span><br>
+                            <span><i class="fa fa-thumbs-up"></i></i>19K<sup>+</sup> Recommends</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Navbar-->
+    <div class="container-fluid">
+        <div class="row shadow mb-4 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!--Navbar-->
+                        <nav class="navbar navbar-expand-sm navbar-light bg-white py-3 gt-nav-bar">
+                            <a href="javascript:void(0)" class="navbar-brand font-weight-bold d-block d-lg-none"
+                                style="color: #007bff;">MENU <i class="fa fa-angle-double-right"></i></a>
+                            <button type="button" data-toggle="collapse" data-target="#navbarContent"
+                                aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation"
+                                class="navbar-toggler gt-custom-toggler">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="navbarContent" class="collapse navbar-collapse">
+                                <ul class="navbar-nav mx-auto">
+                                    <!-- Megamenu-->
+                                    <li class="nav-item dropdown megamenu"><a id="megamneu" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            class="nav-link dropdown-toggle font-weight-bold text-uppercase">Categories</a>
+                                        <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                                            <div class="container">
+                                                <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                                    <div class="col-sm-12">
+                                                        <div class="p-4">
+                                                            <div class="row">
+                                                                <div class="col-sm-3 mb-4">
+                                                                    <h6 class="font-weight-bold text-uppercase">
+                                                                        Computers</h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li class="nav-item"><a href="gadgets.html"
+                                                                                class="nav-link text-small pb-0">Apple</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Dell</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">HP</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Razor</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-sm-3 mb-4">
+                                                                    <h6 class="font-weight-bold text-uppercase">Gamepads
+                                                                    </h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Sony</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Xbox</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Logitech</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-sm-3 mb-4">
+                                                                    <h6 class="font-weight-bold text-uppercase">Gears
+                                                                    </h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0">Apple</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Samsung</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-sm-3 mb-4">
+                                                                    <h6 class="font-weight-bold text-uppercase">
+                                                                        Headphones</h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">AKG</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Bose</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">JBL</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                                    <div class="col-sm-12">
+                                                        <div class="p-4">
+                                                            <div class="row">
+                                                                <div class="col-sm-3 mb-4">
+                                                                    <h6 class="font-weight-bold text-uppercase">
+                                                                        Keyboards
+                                                                    </h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">A4
+                                                                                Tech</a></li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0">Apple</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Logitech</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Razor</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-sm-3 mb-4">
+                                                                    <h6 class="font-weight-bold text-uppercase">Mobiles
+                                                                    </h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Apple</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Oneplus</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Samsung</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Xiaomi</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-sm-3 mb-4">
+                                                                    <h6 class="font-weight-bold text-uppercase">T-shirts
+                                                                    </h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Gucci</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Polo</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-sm-3 mb-4">
+                                                                    <h6 class="font-weight-bold text-uppercase">Others
+                                                                    </h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0">Apple</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">LG</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Samsung</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a href=""
+                                                                                class="nav-link text-small pb-0 ">Rapoo</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item active"><a href="index.html"
+                                            class="nav-link font-weight-bold text-uppercase">Home</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0)"
+                                            class="nav-link font-weight-bold text-uppercase">About</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0)"
+                                            class="nav-link font-weight-bold text-uppercase">Contact</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0)"
+                                            class="nav-link font-weight-bold text-uppercase">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!--/.Navbar-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Jumbotron-->
+    <div class="container">
+        <div class="jumbotron shadow p-4 mb-4 gt-jumbo">
+            <blockquote class="blockquote">
+                <h1 class="display-4 mb-0">Stop wasting your time.</h1>
+                <p class="lead mb-0">Find your desirable gadget and
+                    compare
+                    prices from different websites.
+                </p>
+                <footer class="blockquote-footer">Gadget's everything at one place.</footer>
+            </blockquote>
+        </div>
+    </div>
+
+    <!--Popular categories-->
+    <div class="container-fluid p-3">
+        <div class="container">
+            <div class="row gt-pop-cat">
+                <div class="col-sm-2 p-3">
+                    <div class="row">
+                        <h3>Popular Categories</h3>
+                    </div>
+                    <div class="row gt-prev-next">
+                        <a href="javascript:void(0);" class="gt-btn-round-color"><i class="fa fa-chevron-left"></i></a>
+                        <a href="javascript:void(0);" class="gt-btn-round-color"><i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-2 p-3">
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <i class="fa fa-headphones"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <a href="javascript:void(0);">Headphones</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 p-3">
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <a href="javascript:void(0);">Computers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 p-3">
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <a href="brands.html">Smartphones</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 p-3">
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <i class="fa fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <a href="javascript:void(0);">Gamepad</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 p-3">
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <i class="fa fa-headphones"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" align="center">
+                            <a href="javascript:void(0);">Headphones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Trendy gadgets-->
+    <div class="container-fluid p-5">
+        <div class="container">
+            <div class="row gt-border-bottom-color">
+                <div class="col-sm-6">
+                    <h3>
+                        <span>
+                            <span>Trendy Gadgets</span>
+                            <sup>
+                                <span class="spinner-grow spinner-grow-sm text-primary" role="status"><span
+                                        class="sr-only">Loading...</span></span>
+                                <span class="spinner-grow spinner-grow-sm text-info" role="status"><span
+                                        class="sr-only">Loading...</span></span>
+                            </sup>
+                        </span>
+                    </h3>
+                </div>
+                <div class="col-sm-6">
+                    <!-- <a href="javascript:void(0);" class="gt-btn-round-default"><i class="fa fa-long-arrow-left"></i></a>
+                    <a href="javascript:void(0);" class="gt-btn-round-default"><i class="fa fa-long-arrow-right"></i></a> -->
+                    <ul class="pagination pagination-sm justify-content-end">
+                        <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row gt-inner-trendy-gad p-3" align="center">
+                <div class="col-sm-2">
+                    <div class="card text-center">
+                        <img src="images/gadget.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer">
+                            <a href="gadget.html" role="button"><i>One Plus 7T</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card text-center">
+                        <img src="images/gadget.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer">
+                            <a href="javascript:void(0);" role="button"><i>One Plus 7T</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card text-center">
+                        <img src="images/gadget.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer">
+                            <a href="javascript:void(0);" role="button"><i>One Plus 7T</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card text-center">
+                        <img src="images/gadget.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer">
+                            <a href="javascript:void(0);" role="button"><i>One Plus 7T</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card text-center">
+                        <img src="images/gadget.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer">
+                            <a href="javascript:void(0);" role="button"><i>One Plus 7T</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card text-center">
+                        <img src="images/gadget.jpg" class="card-img-top" alt="...">
+                        <div class="card-footer">
+                            <a href="javascript:void(0);" role="button"><i>One Plus 7T</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Recommended gadgets-->
+    <div class="container-fluid">
+        <div class="row gt-rec-gad p-5">
+            <div class="container">
+                <div class="row gt-border-bottom-color">
+                    <div class="col-sm-6">
+                        <h3>Recommended Gadgets</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- <a href="javascript:void(0);" class="gt-btn-round-default"><i class="fa fa-long-arrow-left"></i></a>
+                            <a href="javascript:void(0);" class="gt-btn-round-default"><i class="fa fa-long-arrow-right"></i></a> -->
+                        <ul class="pagination pagination-sm justify-content-end">
+                            <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row gt-inner-rec-gad p-3">
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="p-3"><img src="images/joystick.png" class="card-img-top" alt="..."></div>
+                            <div><small><b>29K RECOMMENDS</b></small></div>
+                            <div><a href="gadget.html">Gamepad</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="p-3"><img src="images/joystick.png" class="card-img-top" alt="..."></div>
+                            <div><small><b>22.2K RECOMMENDS</b></small></div>
+                            <div><a href="javascript:void(0);">Gamepad</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="p-3"><img src="images/joystick.png" class="card-img-top" alt="..."></div>
+                            <div><small><b>19K RECOMMENDS</b></small></div>
+                            <div><a href="javascript:void(0);">Gamepad</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="p-3"><img src="images/joystick.png" class="card-img-top" alt="..."></div>
+                            <div><small><b>11K RECOMMENDS</b></small></div>
+                            <div><a href="javascript:void(0);">Gamepad</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="p-3"><img src="images/joystick.png" class="card-img-top" alt="..."></div>
+                            <div><small><b>10.1K RECOMMENDS</b></small></div>
+                            <div><a href="javascript:void(0);">Gamepad</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="p-3"><img src="images/joystick.png" class="card-img-top" alt="..."></div>
+                            <div><small><b>10K RECOMMENDS</b></small></div>
+                            <div><a href="javascript:void(0);">Gamepad</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Gadget Advisor-->
+    <div class="container-fluid gt-gad-advisor p-5 shadow">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <b>Don't know where to go? Let GadTo to choose for you <i class="fa fa-angle-double-right"></i>
+                    </b><button class="btn btn-outline-primary">Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="gt-page-footer font-small container-fluid">
+        <!-- Footer Links -->
+        <div class="container">
+            <!-- Grid row-->
+            <h6 class="row text-center d-flex justify-content-center pt-5 mb-3">
+                <!-- Grid column -->
+                <div class="col-sm-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">About us</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-sm-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">Privacy</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-sm-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">FAQ</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-sm-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">Help</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-sm-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">Contact</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-sm-0 mb-4">
+            <!-- Grid column -->
+            <div class="col-sm-8 col-12 mt-5">
+                <p style="line-height: 1.7rem">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum."</p>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="clearfix d-sm-none rgba-white-light" style="margin: 10% 15% 5%;">
+        <!-- Grid row-->
+        <div class="row pb-3" align="center">
+            <!-- Grid column -->
+            <div class="col-sm-12">
+                <div class="mb-5 flex-center">
+                    <!-- Facebook -->
+                    <a class="fb-ic" href="#!">
+                        <i class="fa fa-facebook-f fa-sm white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic" href="#!">
+                        <i class="fa fa-twitter fa-sm white-text mr-4"> </i>
+                    </a>
+                    <!--Pinterest-->
+                    <a class="pin-ic" href="#!">
+                        <i class="fa fa-pinterest fa-sm white-text mr-4"> </i>
+                    </a>
+                </div>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019
+            <a href="index.html"> GadTo</a>
+        </div>
+        <!-- Copyright -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

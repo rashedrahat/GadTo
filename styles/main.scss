@@ -1,0 +1,385 @@
+$gt-primary-color-one: #007bff;
+$gt-primary-color-two: #eff6fa;
+$gt-primary-color-three: #fafafa;
+
+$gt-link-color-one: #007bff;
+$gt-link-color-two: grey;
+$gt-link-hover-color-one: #0069D9;
+$gt-link-hover-color-two: black;
+
+// html { font-size: calc(0.5em + 1vw); }
+
+.gt-hyper-link a:hover {
+  text-decoration: none;
+}
+
+.gt-top-bar {
+  background-color: $gt-primary-color-three;
+}
+
+.gt-top-bar .row div:nth-child(4) {
+  text-align: right;
+}
+
+.gt-2nd-bar .row div:nth-child(3) {
+  text-align: right;
+}
+
+.gt-logo a {
+  font-size: 36px;
+  font-weight: 500;
+  color: $gt-primary-color-one;
+}
+
+.gt-global-search,
+.gt-cat {
+  border: 1px solid $gt-primary-color-one;
+}
+
+// .gt-active {
+//   // bottom: 20px;
+//   // width: 100%;
+//   // height: 4px;
+//   // background: $gt-primary-color-one;
+//   border-bottom: 4px solid $gt-primary-color-one;
+// }
+
+.gt-nav-bar li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: $gt-primary-color-one;
+  transition: width .3s;
+}
+
+.gt-nav-bar li:hover::after {
+  width: 100%;
+}
+
+// .gt-nav-bar li:hover {
+//   border-bottom: 3px solid $gt-primary-color-one;
+// }
+
+.gt-jumbo {
+  background-color: $gt-primary-color-three;
+}
+
+.gt-pop-cat > div:nth-child(even),
+.gt-gad-info > div:nth-child(even) {
+  background: $gt-primary-color-two;
+}
+
+.gt-pop-cat i,
+.gt-gad-info i {
+  font-size: 72px;
+}
+
+.gt-pop-cat a,
+.gt-gad-info a {
+  display: inline-block;
+  padding: 8px 16px;
+  color: $gt-link-color-two;
+}
+
+.gt-pop-cat a:hover,
+.gt-gad-info a:hover {
+  text-decoration-line: none;
+  color: $gt-link-hover-color-two;
+}
+
+.gt-pop-cat h6 {
+  font-weight: bold;
+}
+
+.gt-prev-next i {
+  font-size: 18px;
+}
+
+.gt-btn-round-color {
+  border-radius: 50%;
+  background-color: $gt-primary-color-three;
+}
+
+.gt-btn-round-default {
+  border-radius: 50%;
+}
+
+.gt-border-bottom-color {
+  border-bottom: 1px solid lightslategrey;
+}
+
+.gt-trendy-gad a:hover {
+  text-decoration-line: none;
+  color: $gt-link-hover-color-two;
+}
+
+.gt-inner-trendy-gad a {
+  text-decoration-line: none;
+}
+
+.gt-inner-trendy-gad .col-sm-2 > .card {
+  border: none;
+  width: 11em;
+  transition: 0.5s ease;
+}
+
+.gt-inner-trendy-gad .col-sm-2 > .card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom: 4px solid $gt-primary-color-one;
+}
+
+.gt-inner-trendy-gad .col-sm-2 > .card > .card-footer {
+  background-color: $gt-primary-color-three;
+}
+
+.gt-rec-gad,
+.gt-sim-gad {
+  background-color: $gt-primary-color-two;
+}
+
+.gt-rec-gad a,
+.gt-sim-gad a {
+  text-decoration-line: none;
+  display: inline-block;
+  padding: 8px 16px;
+  color: $gt-link-color-two;
+}
+
+.gt-rec-gad a:hover,
+.gt-sim-gad a:hover {
+  text-decoration-line: none;
+  color: $gt-link-hover-color-two;
+}
+
+.gt-inner-rec-gad .col-sm-2 > .card,
+.gt-inner-sim-gad .col-sm-2 > .card {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  height: 200px;
+  position: relative;
+  width: 160px;
+}
+
+.gt-inner-rec-gad .col-sm-2 > .card:hover,
+.gt-inner-sim-gad .col-sm-2 > .card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gt-inner-rec-gad .col-sm-2 > .card:hover,
+.gt-inner-sim-gad .col-sm-2 > .card a:hover {
+  color: $gt-link-color-two;
+}
+
+.gt-page-footer a {
+  text-decoration-line: none;
+}
+
+.gt-breadcrumb-bg-default {
+  background-color: white;
+}
+
+.gt-breadcrumb-bg-default a:hover {
+  text-decoration: none;
+}
+
+.gt-gad-specifications,
+.gt-gad-specifications > li > i {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: small;
+}
+
+.gt-gad-prices > li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: small;
+}
+
+.gt-gad-share > *,
+.gt-gad-rec > * {
+  display: inline;
+}
+
+.gt-gad-rec-btn {
+  border: none;
+  background-color: white;
+}
+
+.gt-gad-rec-btn > i:hover {
+  color: $gt-link-color-two;
+}
+
+.gt-gad-review i {
+  font-size: small;
+  color: $gt-primary-color-one;
+}
+
+.gt-gad-star i {
+  font-size: small;
+  color: $gt-primary-color-one;
+}
+
+.gt-log-in .hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  &:before {
+    content: '';
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: #818078;
+    background-color: #fcfcfa;
+  }
+}
+
+//
+.gt-gen-user body {
+  font-family: "Raleway", sans-serif;
+  background-color: $gt-primary-color-three;
+}
+.gt-gen-user body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.gt-gen-user a {
+  color: $gt-link-color-two;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.gt-admin-user html, .gt-admin-user body, .gt-admin-user h1, .gt-admin-user h2, .gt-admin-user h3, .gt-admin-user h4,
+.gt-admin-user h5 {
+            font-family: "Raleway", sans-serif
+        }
+
+.gt-admin-user .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.gt-admin-user .switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.gt-admin-user .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.gt-admin-user .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.gt-admin-user input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.gt-admin-user input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.gt-admin-user input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.gt-admin-user .slider.round {
+  border-radius: 34px;
+}
+
+.gt-admin-user .slider.round:before {
+  border-radius: 50%;
+}
+
+.gt-gad-advisor {
+  background-color: $gt-primary-color-three;
+  text-align: center;
+}
+
+.gt-ad-info i {
+  cursor: pointer;
+}
+
+.gt-ad-info a {
+  color: $gt-primary-color-one;
+}
+
+.gt-ad-issue-feedback i {
+  color: $gt-primary-color-one;
+}
+
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.gt-custom-toggler.navbar-toggler {
+  border-color: #007bff;
+}
+
+.gt-custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,123,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media only screen and (max-width: 600px) {
+  /* For small devices: */
+  .gt-top-bar,
+  .gt-2nd-bar,
+  .gt-rec-gad,
+  .gt-inner-sim-gad > div {
+    text-align: center;
+  }
+}

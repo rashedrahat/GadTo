@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="gt-admin-user">
+
+<head>
+    <title>Requested Users</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../../styles/main.css">
+</head>
+
+<body style="background-color: #fafafa;" class="gt-hyper-link">
+
+    <!-- Top container -->
+    <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="menu_open();"><i class="fa fa-bars"></i>  Menu</button>
+        <span class="w3-bar-item w3-right">GadTo</span>
+    </div>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container w3-row">
+            <div class="w3-col s4">
+                <img src="../../../images/avatar.png" class="w3-circle w3-margin-right" style="width:64px">
+            </div>
+            <div class="w3-col s10 w3-bar">
+                <span>Welcome, <strong>Rashed</strong></span><br>
+                <!-- <i href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-envelope" title="Messages"></i></a> -->
+                <a href="profile-info.html" class="w3-bar-item w3-button"><i class="fa fa-user"
+                        title="Profile info"></i></a>
+                <div class="w3-dropdown-hover">
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button" title="Notifications"><i
+                            class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-blue">2</span></a>
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                        <a href="javascript:void(0)" class="w3-bar-item w3-button" style="text-decoration: none;">One
+                            new user
+                            request</a>
+                        <a href="javascript:void(0)" class="w3-bar-item w3-button" style="text-decoration: none;">One
+                            new ad request</a>
+                    </div>
+                </div>
+                <a href="../../../log-in.html" class="w3-bar-item w3-button" title="Log out"><i
+                        class="fa fa-sign-out"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-container">
+            <h5>Dashboard</h5>
+        </div>
+        <div class="w3-bar-block">
+            <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+                onclick="menu_close()" title="Close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            <a href="dashboard.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-dashboard fa-fw"></i> 
+                Overview</a>
+            <div class="w3-dropdown-hover">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-diamond fa-fw"></i>  Manage Gadgets
+                    Info <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block"">
+                        <a href=" manage-gad-cats.html" class="w3-bar-item w3-button" style="text-decoration: none;">
+                    Gadget Categories</a>
+                    <a href="manage-brand-cats.html" class="w3-bar-item w3-button" style="text-decoration: none;">Brand
+                        Categories</a>
+                    <a href=" manage-e-com-sites.html" class="w3-bar-item w3-button" style="text-decoration: none;">
+                        E-commerce Sites</a>
+                    <a href="manage-reviews.html" class="w3-bar-item w3-button"
+                        style="text-decoration: none;">Reviews</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-blue"><i
+                        class="fa fa-users fa-fw"></i> 
+                    Manage Users <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="req-users.html" class="w3-bar-item w3-button" style="text-decoration: none;">Requested
+                        Users</a>
+                    <a href="reg-users.html" class="w3-bar-item w3-button" style="text-decoration: none;">Registered
+                        Users</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i> 
+                    Manage Ads <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="req-ads.html" class="w3-bar-item w3-button" style="text-decoration: none;">Requested
+                        Ads</a>
+                    <a href="reg-ads.html" class="w3-bar-item w3-button" style="text-decoration: none;">Registered
+                        Ads</a>
+                    <a href="ads-issue.html" class="w3-bar-item w3-button" style="text-decoration: none;">Ads Issue</a>
+                </div>
+            </div>
+            <a href="leave.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-leaf fa-fw"></i>  Apply for
+                Leave</a>
+            <a href="dashboard.html#GS" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bar-chart fa-fw"></i> 
+                General
+                Stats</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-database fa-fw"></i> 
+                Manage
+                Database</a>
+    </nav>
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="menu_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+        <div class="container-fluid p-5">
+            <h2>Requested Users</h2>
+            <table class="table table-bordered table-responsive-sm" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td><button type="button" class="btn btn-outline-primary btn-sm">Accept</button>&emsp;<button
+                                type="button" class="btn btn-outline-danger btn-sm">Deny</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End page content -->
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function menu_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function menu_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

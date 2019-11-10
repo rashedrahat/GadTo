@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="gt-gen-user">
+
+<head>
+    <title>Profile Info</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+</head>
+
+<body class="gt-hyper-link">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="dashborad.html" class="w3-bar-item w3-button w3-wide" title="Profile home"
+                style="text-decoration: none;"><span>Welcome, <strong>Rashed</strong></span></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="../../index.html" class="w3-bar-item w3-button" title="Jump to GadTo Home"
+                    style="text-decoration: none;"><i class="fa fa-home"></i> GadTo Home</a>
+                <a href="post-ad.html" class="w3-bar-item w3-button" style="text-decoration: none;"><i
+                        class="fa fa-bullhorn"></i>
+                    Post ad</a>
+                <a href="ads-info.html" class="w3-bar-item w3-button" style="text-decoration: none;"><i
+                        class="fa fa-info"></i> Ads
+                    info</a>
+                <a href="profile-info.html" class="w3-bar-item w3-button" title="Profile info"><i
+                        class="fa fa-user"></i></a>
+                <!-- <i href="#" class="w3-bar-item w3-button" title="Messages"><i class="fa fa-envelope"></i></a> -->
+                <a href="#" class="w3-bar-item w3-button" title="Notifications"><i class="fa fa-bell"></i>
+                    <span class="w3-badge w3-right w3-small w3-blue">2</span></a>
+                <a href="../../log-in.html" class="w3-bar-item w3-button" title="Log out"><i
+                        class="fa fa-sign-out"></i></a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="menu_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="menu_close()" class="w3-bar-item w3-button w3-large w3-padding-16"
+            style="text-decoration: none;">Close ×</a>
+        <a href="../../index.html" onclick="menu_close()" class="w3-bar-item w3-button"
+            style="text-decoration: none;">GadTo HOME</a>
+        <a href="post-ad.html" onclick="menu_close()" class="w3-bar-item w3-button" style="text-decoration: none;">POST
+            AD</a>
+        <a href="ads-info.html" onclick="menu_close()" class="w3-bar-item w3-button" style="text-decoration: none;">ADS
+            INFO</a>
+        <a href="profile-info.html" onclick="menu_close()" class="w3-bar-item w3-button"
+            style="text-decoration: none;">PROFILE INFO</a>
+        <!-- <a href="#" onclick="menu_close()" class="w3-bar-item w3-button" style="text-decoration: none;">MESSAGES</a> -->
+        <a href="#" onclick="menu_close()" class="w3-bar-item w3-button"
+            style="text-decoration: none;">NOTIFICATIONS</a>
+        <a href="../../log-in.html" onclick="menu_close()" class="w3-bar-item w3-button"
+            style="text-decoration: none;">LOG OUT</a>
+    </nav>
+
+    <!--Profile Info-->
+    <div class="container-fluid" style="margin-top: 100px;">
+        <div class="row p-5">
+            <div class="container shadow p-4 mb-4 bg-white gt-log-in">
+                <div class="row" align="center">
+                    <div class="col-sm-12">
+                        <p class="lead"><b>Rashed, your account information</b></p>
+                        <form>
+                            <div class="col-sm-4 mb-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">@</div>
+                                    </div>
+                                    <input type="text" class="form-control" id="username" placeholder="Your username"
+                                        required value="rashed" disabled readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mb-2">
+                                <input type="text" class="form-control" id="name" placeholder="Your first and last name"
+                                    required value="Rashed Rahat">
+                            </div>
+                            <div class="col-sm-4 mb-2">
+                                <input type="email" class="form-control" id="email" placeholder="Your email" required
+                                    value="rashedrahat@outlook.com">
+                            </div>
+                            <div class="col-sm-4 mb-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">+880</div>
+                                    </div>
+                                    <input type="text" max="10" class="form-control" id="phone"
+                                        placeholder="Your phone number" required value="1633179767">
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4 mb-2">
+                                <select id="gender" class="form-control" required disabled readonly>
+                                    <option>Your gender</option>
+                                    <option>Female</option>
+                                    <option selected>Male</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4 mb-2">
+                                <input type="date" class="form-control" id="birth" required value="26-Oct-2019">
+                            </div>
+                            <div class="col-sm-4 mb-2">
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Create a password" required value="123456">
+                            </div>
+                            <div class="col-sm-4 mb-2">
+                                <button type="submit" class="btn btn-sm btn-primary">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function menu_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function menu_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

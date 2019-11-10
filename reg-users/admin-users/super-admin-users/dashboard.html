@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="gt-admin-user">
+
+<head>
+    <title>Admin Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../styles/main.css">
+</head>
+
+<body class="w3-light-grey gt-hyper-link">
+
+    <!-- Top container -->
+    <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="menu_open();"><i class="fa fa-bars"></i>  Menu</button>
+        <span class="w3-bar-item w3-right">GadTo</span>
+    </div>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container w3-row">
+            <div class="w3-col s4">
+                <img src="../../../images/avatar.png" class="w3-circle w3-margin-right" style="width:64px">
+            </div>
+            <div class="w3-col s10 w3-bar">
+                <span>Welcome, <strong>Rashed</strong></span><br>
+                <!-- <i href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-envelope" title="Messages"></i></a> -->
+                <a href="profile-info.html" class="w3-bar-item w3-button"><i class="fa fa-user"
+                        title="Profile info"></i></a>
+                <div class="w3-dropdown-hover">
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button" title="Notifications"><i
+                            class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-blue">2</span></a>
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                        <a href="javascript:void(0)" class="w3-bar-item w3-button" style="text-decoration: none;">One
+                            new user
+                            request</a>
+                        <a href="javascript:void(0)" class="w3-bar-item w3-button" style="text-decoration: none;">One
+                            new ad request</a>
+                    </div>
+                </div>
+                <a href="../../../log-in.html" class="w3-bar-item w3-button" title="Log out"><i
+                        class="fa fa-sign-out"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-container">
+            <h5>Dashboard</h5>
+        </div>
+        <div class="w3-bar-block">
+            <a href="javascript:void(0)"
+                class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+                onclick="menu_close()" title="Close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            <a href="dashboard.html" class="w3-bar-item w3-button w3-padding w3-blue"><i
+                    class="fa fa-dashboard fa-fw"></i> 
+                Overview</a>
+            <div class="w3-dropdown-hover">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i> 
+                    Manage Admins <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="create-admin.html" class="w3-bar-item w3-button" style="text-decoration: none;">Create
+                        Admin</a>
+                    <a href="manage-admins.html" class="w3-bar-item w3-button" style="text-decoration: none;">Exist
+                        Admins</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"><i
+                        class="fa fa-diamond fa-fw"></i>  Manage Gadgets
+                    Info <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block"">
+                        <a href=" manage-gad-cats.html" class="w3-bar-item w3-button" style="text-decoration: none;">
+                    Gadget Categories</a>
+                    <a href="manage-brand-cats.html" class="w3-bar-item w3-button" style="text-decoration: none;">Brand
+                        Categories</a>
+                    <a href=" manage-e-com-sites.html" class="w3-bar-item w3-button" style="text-decoration: none;">
+                        E-commerce Sites</a>
+                    <a href="manage-reviews.html" class="w3-bar-item w3-button"
+                        style="text-decoration: none;">Reviews</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i> 
+                    Manage Users <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="req-users.html" class="w3-bar-item w3-button" style="text-decoration: none;">Requested
+                        Users</a>
+                    <a href="reg-users.html" class="w3-bar-item w3-button" style="text-decoration: none;">Registered
+                        Users</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i> 
+                    Manage Ads <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="req-ads.html" class="w3-bar-item w3-button" style="text-decoration: none;">Requested
+                        Ads</a>
+                    <a href="reg-ads.html" class="w3-bar-item w3-button" style="text-decoration: none;">Registered
+                        Ads</a>
+                    <a href="ads-issue.html" class="w3-bar-item w3-button" style="text-decoration: none;">Ads Issue</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i> 
+                    Manage Leaves <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="req-leaves.html" class="w3-bar-item w3-button" style="text-decoration: none;">Requested
+                        Leaves</a>
+                    <a href="at-leave.html" class="w3-bar-item w3-button" style="text-decoration: none;">At Leave</a>
+                </div>
+            </div>
+            <a href="dashboard.html#GS" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bar-chart fa-fw"></i> 
+                General
+                Stats</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"><i class="fa fa-database fa-fw"></i> 
+                Manage
+                Database</a>
+    </nav>
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="menu_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+        <!-- Header -->
+        <header class="w3-container" style="padding-top:22px">
+            <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+        </header>
+
+        <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-quarter">
+                <div class="w3-container w3-red w3-padding-16">
+                    <div class="w3-left"><i class="fa fa-diamond w3-xxxlarge"></i></div>
+                    <div class="w3-right">
+                        <h3>1052</h3>
+                    </div>
+                    <div class="w3-clear"></div>
+                    <h4>Gadgets</h4>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-container w3-blue w3-padding-16">
+                    <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+                    <div class="w3-right">
+                        <h3>99</h3>
+                    </div>
+                    <div class="w3-clear"></div>
+                    <h4>Admins</h4>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-container w3-teal w3-padding-16">
+                    <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+                    <div class="w3-right">
+                        <h3>23</h3>
+                    </div>
+                    <div class="w3-clear"></div>
+                    <h4>Users</h4>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-container w3-orange w3-text-white w3-padding-16">
+                    <div class="w3-left"><i class="fa fa-area-chart w3-xxlarge"></i> <i
+                            class="fa fa-line-chart w3-xxlarge"></i></div>
+                    <div class="w3-right">
+                        <h3>5</h3>
+                    </div>
+                    <div class="w3-clear"></div>
+                    <a href="javascript:void(0)" style="text-decoration: none;">
+                        <h4 title="See more charts">Charts</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-panel">
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-third">
+                    <h5>Pie Chart</h5>
+                    <div id="pieChart" style="height: 370px; width: 100%;"></div>
+                </div>
+                <div class="w3-twothird">
+                    <h5>Bar Chart</h5>
+                    <div id="barChart" style="height: 370px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-container">
+            <h5 id="GS">General Stats</h5>
+            <p>New Visitors</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-center w3-padding w3-green" style="width:25%">+25%</div>
+            </div>
+
+            <p>New Users</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-center w3-padding w3-orange" style="width:50%">50%</div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-16" style="background-color: #fafafa;">
+            <h6>© 2019 GadTo</h6>
+            <p>Powered by <a href="../../../index.html" target="_blank">GadTo</a></p>
+        </footer>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function menu_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function menu_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+
+        //Pie Chart && Bar Chart
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("pieChart", {
+                animationEnabled: true,
+                title: {
+                    text: "Weekly Top Viwed Gadgets",
+                    horizontalAlign: "left"
+                },
+                data: [{
+                    type: "doughnut",
+                    startAngle: 60,
+                    //innerRadius: 60,
+                    indexLabelFontSize: 17,
+                    indexLabel: "{label} - #percent%",
+                    toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                    dataPoints: [
+                        { y: 1067, label: "iPhone XS MAX" },
+                        { y: 728, label: "OnePlus 6T" },
+                        { y: 319, label: "Mi 8" }
+                    ]
+                }]
+            });
+            chart.render();
+
+            var chart = new CanvasJS.Chart("barChart", {
+                animationEnabled: true,
+                theme: "dark1", // "light1", "light2", "dark1", "dark2"
+                title: {
+                    text: "Weekly Top Rated Gadgets"
+                },
+                axisY: {
+                    title: ""
+                },
+                data: [{
+                    type: "column",
+                    showInLegend: true,
+                    legendMarkerColor: "White",
+                    legendText: "1,000 = 1K Points",
+                    dataPoints: [
+                        { y: 3008.5, label: "iPhone XS Max" },
+                        { y: 2664.25, label: "OnePlus 6T" },
+                        { y: 1697.1, label: "Dell XPS 15" }
+                    ]
+                }]
+            });
+            chart.render();
+        }
+    </script>
+
+</body>
+
+</html>
